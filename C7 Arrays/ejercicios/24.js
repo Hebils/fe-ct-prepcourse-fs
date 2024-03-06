@@ -5,6 +5,20 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
+  var array = new Array
+  for(i = 0; i < 9; i++){
+    if (array[i] === 5){
+      
+      continue;
+
+    } else {
+    num = num + 2;
+    array[i] = num;
+  }
+  }
+
+  return array;
+  
 }
 
 module.exports = continueStatement;

@@ -3,17 +3,17 @@ function mesesDelAño(array) {
   // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
   // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
   // Tu código:
-  for(var i = 0; i < array.length; i++){
+  var LostMonths = array.filter(element => element === 'Enero' || element === 'Marzo' || element === 'Noviembre');
 
-    if (array[i] === 'Enero' || array[i] === 'Marzo' || array[i] === 'Noviembre'){
+  if (LostMonths.length === 3){
 
-      var LostMonths = Array['Enero', 'Marzo', 'Noviembre']
-    }
+    return LostMonths;
+    
+  } else {
 
-    return 'No se encontraron los meses perdidos';
-  }
+    return 'No se encontraron los meses pedidos';
 
-  
+}
 }
 
 module.exports = mesesDelAño;
